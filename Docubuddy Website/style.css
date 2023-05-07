@@ -1,0 +1,370 @@
+:root{
+    --light-blue: rgb(59, 183, 255);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+}
+
+nav .logo{
+    display: flex;
+    margin-left: 80px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+nav ul li .pricing{
+    border-bottom: 1px solid var(--light-blue);
+    padding-bottom: 5px;
+}
+
+nav ul li .try-it-free{
+    border: 1px solid var(--light-blue);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+nav ul li .login{
+    color: var(--light-blue);
+}
+
+
+header{
+    background-color: rgb(57, 57, 116);
+    color: #fff;
+    width: 97%;
+    height: 60vh;
+    float: right;
+    border-radius: 0px 0px 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+}
+
+
+header > *{
+    margin-top: 100px;
+}
+
+header .col-1, .col-2{
+    margin-top: 170px;
+}
+
+header .col-1 h1{
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+header .col-1 .blue{
+    color: var(--light-blue);
+}
+
+header .col-2 p{
+    width: 550px;
+    line-height: 25px;
+    font-size: 15.4px;
+    border-left: 1px solid rgba(73, 73, 155, 0.973);
+    padding-left: 30px;
+}
+
+header .demo-buttons{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    display: flex;
+}
+
+
+header .demo-buttons button{
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 50px;
+}
+
+header .demo-buttons .btn-1{
+    background-color: rgb(2, 2, 29);
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+header .demo-buttons .btn-2{
+    background-color: var(--light-blue);
+    color: #000;
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+/* Main Content */
+
+main{
+    top: 600px;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+}
+
+.main-content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    height: 90vh;
+}
+
+.main-content .light-blue-behind-text{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(214, 247, 236);
+    border-radius: 20px 20px 0px 20px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.main-content .text-1{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.main-content .cards{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards .card-1, .card-2, .card-3{
+    height: 400px;
+    background-color: rgb(252, 252, 220);
+    border-radius: 20px 20px 0px 20px;
+    position: relative;
+}
+
+.cards div .icon{
+    font-size: 40px;
+    color: rgb(126, 125, 125);
+}
+
+.cards div .text h2{
+    font-size: 30px;
+    line-height: 29px;
+}
+
+.cards div .text p{
+    font-size: 14px;
+    width: 250px;
+    margin-top: 30px;
+    line-height: 23px;
+}
+
+.cards div .icon, .text{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.cards div .card-footer{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards div .card-footer .line{
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+}
+
+.cards div .card-footer a{
+    text-decoration: none;
+    font-size: 14.2px;
+    font-weight: bolder;
+}
+
+.cards .card-2{
+    background-color: rgb(214, 247, 236);
+    box-shadow: 10px 15px 30px rgba(128, 128, 128, 0.39);
+}
+
+.main-content small{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    font-size: 15px;
+    color: rgb(80, 79, 79);
+}
+
+footer{
+    top: 1400px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-1{
+    background-color: rgba(226, 226, 243, 0.301);
+    width: 97%;
+    height: 80vh;
+    border-radius: 0px 100px 0px 0px;
+    z-index: -1;
+}
+
+
+
+.footer-1 .txt-1{
+    margin-left: 30%;
+    position: absolute;
+    top: 50px;
+}
+
+.footer-1 .txt-1 p{
+    font-size: 13.5px;
+}
+
+footer .demo-buttons{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    display: flex;
+}
+
+
+footer .demo-buttons button{
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 50px;
+}
+
+footer .demo-buttons .btn-1{
+    background-color: rgb(2, 2, 29);
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+footer .demo-buttons .btn-2{
+    background-color: var(--light-blue);
+    color: #000;
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+footer .footer-1 hr{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 70%;
+}
+
+
+footer .footer-1 .logo{
+    display: flex;
+    position: absolute;
+    margin-left: 100px;
+    top: 50%;
+}
+
+footer .footer-1 .copyright{
+    display: flex;
+    position: absolute;
+    margin-left: 100px;
+    font-size: 13px;
+    top: 60%;
+}
+
+
+footer .footer-2{
+    height: 63vh;
+    width: 70%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    background-color: rgba(235, 202, 235, 0.301);
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 60px 10px 0px 0px;
+
+}
+
+footer .footer-2 h5{
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+footer .footer-2 ul{
+    height: 200px;
+    margin-top: 50px;
+}
+
+footer .footer-2 ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer .footer-2 ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+
+footer .footer-2 .footer-links-4 li{
+    margin-bottom: 30px;
+}
+
+footer .footer-2 .footer-links-4 li a {
+    background-color: #fff;
+    color: rgba(113, 111, 230, 0.726);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+footer .footer-2 .footer-links-4 li .icon-1{
+    padding-right: 52px;
+
+}
